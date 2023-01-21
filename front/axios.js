@@ -93,36 +93,36 @@ recupererInfosModalMeilleurFilm()
 
 
 
-// ****************************************************************************************************************************************************************************************************************************************************************************************
-// TEST TEST TEST TEST TEST PAS FINI !!! A TERMINER !!! POUR RECUPERER LE LINK DU FILM 
-// pourquoi ici mettre une fonction asynchrone? *******************************************************************************************************************************************************************************************************************************************
-// ****************************************************************************************************************************************************************************************************************************************************************************************
+// // ****************************************************************************************************************************************************************************************************************************************************************************************
+// // TEST TEST TEST TEST TEST PAS FINI !!! A TERMINER !!! POUR RECUPERER LE LINK DU FILM 
+// // pourquoi ici mettre une fonction asynchrone? *******************************************************************************************************************************************************************************************************************************************
+// // ****************************************************************************************************************************************************************************************************************************************************************************************
 
 
 
-async function rajouterLinkFilm(liendufilm) { // est ce le bon nom??
+// async function rajouterLinkFilm(liendufilm) { // est ce le bon nom??
   
-  let linkFilm = liendufilm;
+//   let linkFilm = liendufilm;
 
-  axios.get(linkFilm)
+//   axios.get(linkFilm)
   
-  .then(function(donnees) {
+//   .then(function(donnees) {
 
-    let linkFilm = document.querySelector('#linkF1'); // au lieu d un id mettre le chemin ???????
-    linkFilm.textContent     = donnees.data.results[0].url;
+//     let linkFilm = document.querySelector('#linkF1'); // au lieu d un id mettre le chemin ???????
+//     linkFilm.textContent     = donnees.data.results[0].url;
 
-  })
+//   })
 
 
-  .catch(function(erreur) {
-    alert('Un problème est survenu 3');
-  })
-  .then(function () {
-    console.log('mise à jour effectuée');
-  });
-  }
+//   .catch(function(erreur) {
+//     alert('Un problème est survenu 3');
+//   })
+//   .then(function () {
+//     console.log('mise à jour effectuée');
+//   });
+//   }
   
-  rajouterLinkFilm()
+//   rajouterLinkFilm()
   
 
 
