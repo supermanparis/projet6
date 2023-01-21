@@ -24,7 +24,7 @@ axios.get(urlMeilleurFilm)
 })
 
 .catch(function(erreur) {
-  alert('Un problème est survenu');
+  alert('Un problème est survenu 1');
 })
 .then(function () {
   console.log('mise à jour effectuée');
@@ -80,7 +80,7 @@ axios.get(urlMeilleurFilm)
 
 
 .catch(function(erreur) {
-  alert('Un problème est survenu');
+  alert('Un problème est survenu 2');
 })
 .then(function () {
   console.log('mise à jour effectuée');
@@ -115,7 +115,7 @@ async function rajouterLinkFilm(liendufilm) { // est ce le bon nom??
 
 
   .catch(function(erreur) {
-    alert('Un problème est survenu');
+    alert('Un problème est survenu 3');
   })
   .then(function () {
     console.log('mise à jour effectuée');
@@ -237,7 +237,7 @@ async function recupererImagesMeilleursFilmsP1() {
   
   
   .catch(function(erreur) {
-    alert('Un problème est survenu');
+    alert('Un problème est survenu 4');
   })
   .then(function () {
     console.log('mise à jour effectuée');
@@ -286,7 +286,7 @@ async function recupererImagesMeilleursFilmsP2() {
   
   
   .catch(function(erreur) {
-    alert('Un problème est survenu');
+    alert('Un problème est survenu 5');
   })
   .then(function () {
     console.log('mise à jour effectuée');
@@ -338,7 +338,7 @@ async function recupererImagesMeilleursFilmsActionP1() {
   
   
   .catch(function(erreur) {
-    alert('Un problème est survenu');
+    alert('Un problème est survenu 6');
   })
   .then(function () {
     console.log('mise à jour effectuée');
@@ -373,7 +373,7 @@ async function recupererImagesMeilleursFilmsActionP2() {
   
   
   .catch(function(erreur) {
-    alert('Un problème est survenu');
+    alert('Un problème est survenu 7');
   })
   .then(function () {
     console.log('mise à jour effectuée');
@@ -420,7 +420,7 @@ async function recupererImagesMeilleursFilmsThrillerP1() {
   
   
   .catch(function(erreur) {
-    alert('Un problème est survenu');
+    alert('Un problème est survenu 8');
   })
   .then(function () {
     console.log('mise à jour effectuée');
@@ -456,7 +456,7 @@ async function recupererImagesMeilleursFilmsThrillerP2() {
   
   
   .catch(function(erreur) {
-    alert('Un problème est survenu');
+    alert('Un problème est survenu 9');
   })
   .then(function () {
     console.log('mise à jour effectuée');
@@ -504,7 +504,7 @@ async function recupererImagesMeilleursFilmsRomanceP1() {
   
   
   .catch(function(erreur) {
-    alert('Un problème est survenu');
+    alert('Un problème est survenu 10');
   })
   .then(function () {
     console.log('mise à jour effectuée');
@@ -539,7 +539,7 @@ async function recupererImagesMeilleursFilmsRomanceP2() {
   
   
   .catch(function(erreur) {
-    alert('Un problème est survenu');
+    alert('Un problème est survenu 11');
   })
   .then(function () {
     console.log('mise à jour effectuée');
@@ -572,7 +572,7 @@ axios.get(urlCategorie)
 })
 
 .catch(function(erreur) {
-  alert('Un problème est survenu');
+  alert('Un problème est survenu 12');
 })
 .then(function () {
   console.log('mise à jour effectuée');
