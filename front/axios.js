@@ -1,5 +1,6 @@
 
 const url = "http://localhost:8000/api/v1/";
+const urlBaseIndexFilm = "http://localhost:8000/api/v1/titles/";
 
 // ****************************************************************************************************************************************************************************************************************************************************************************************
 // ****************************************************************************************************************************************************************************************************************************************************************************************
@@ -88,6 +89,92 @@ axios.get(urlMeilleurFilm)
 }
 
 recupererInfosModalMeilleurFilm()
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ****************************************************************************************************************************************************************************************************************************************************************************************
+// TEST COPIE DU CODE POUR RECUPERER LES INFOS DE LA FENTERE MODAL ***************************************************************************************************************************************************************************************************************
+// ****************************************************************************************************************************************************************************************************************************************************************************************
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+async function recupererInfosModalIndexFilm(indexFilm) {  
+
+  let indexFilm = ;
+  let urlIndexFilm = urlBaseIndexFilm + indexFilm;
+  
+  axios.get(urlIndexFilm)
+  
+  .then(function(donnees) {
+  
+    let titreMeilleurFilm              = document.querySelector('#titreMeilleurFilm');
+    titreMeilleurFilm.textContent      = donnees.data.results[0].title;
+  
+    let titreFilmModal         = document.querySelector('#titreFilmModal');
+    titreFilmModal.textContent = donnees.data.results[0].title;
+  
+    let imageFilmModal         = document.querySelector('#imageFilmModal');
+    imageFilmModal.src         = donnees.data.results[0].image_url;
+  
+    let genre          =  document.querySelector('#genre');
+    genre.textContent  = " Genre complet du film: " + donnees.data.results[0].genres;
+  
+    let date           = document.querySelector('#date');
+    date.textContent   = " Date de sortie: " + donnees.data.results[0].year;
+  
+    let rated          = document.querySelector('#rated');
+    rated.textContent  = "Votes: " + donnees.data.results[0].votes;
+  
+    let score          = document.querySelector('#score');
+    score.textContent  = "Score Imdb: " + donnees.data.results[0].imdb_score;
+  
+    let real           = document.querySelector('#real');
+    real.textContent   = "Réalisateur: " + donnees.data.results[0].directors;
+  
+    let actors         = document.querySelector('#actors');
+    actors.textContent = "Acteurs: " + donnees.data.results[0].actors;
+  
+  
+  })
+  
+  
+  .catch(function(erreur) {
+    alert('Un problème est survenu 2');
+  })
+  .then(function () {
+    console.log('mise à jour effectuée');
+  });
+  }
+  
+  recupererInfosModalIndexFilm(indexFilm)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
